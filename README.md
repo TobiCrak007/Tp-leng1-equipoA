@@ -3,4 +3,5 @@
 <nombre>Tobias Uriel Medina</nombre>,
 <nombre>Lionela Abril Ledesma</nombre>,
 <nombre>Paula Agustina Penin</nombre>,
-<nombre>Lucas Santillan</nombre>.
+<nombre>Lucas Daniel 
+Santillan</nombre>.
