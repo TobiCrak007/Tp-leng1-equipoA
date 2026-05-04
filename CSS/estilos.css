@@ -1,0 +1,100 @@
+/*VARIABLES*/
+:root {
+ --color-primario: #2c7be5;
+ --color-secundario: #1a5bb8;
+ --color-acento: #1ae8aa;
+ --color-fondo: #f4f4f4;
+ --color-texto: #000000;
+}
+
+body {
+    margin-left: 75px; 
+    margin-right: 75px;
+    background-color: var(--color-fondo);
+}
+
+/*HEADER*/
+header {
+    text-align: center;
+    background-color: var(--color-primario);
+    margin-bottom: 20px;
+    border-radius: 15px;
+}
+
+h1{
+    font-family: "Montserrat";
+}
+
+/*NAVEGACION*/
+nav {
+    text-align: center;
+    background-color: var(--color-secundario);
+    border-radius: 15px;
+}
+
+button {
+    background-color: var(--color-fondo);
+    border-radius: 15px;
+}
+
+section {
+    border-style: groove;
+    border-color: var(--color-acento);
+    border-radius: 15px;
+    padding: 15px;
+    margin-bottom: 10px;
+
+}
+
+p {
+    font-family: "Inter";
+}
+
+/*IMAGENES*/
+#charla {
+    margin-left: 100px;
+    border-style: groove;
+    border-radius: 15px;
+    height: 250px;
+    max-width: 100%;
+}
+
+#voluntariado {
+    float: right; 
+    margin-right: 100px;
+    border-style: groove;
+    border-radius: 15px;
+    height: 250px;
+    max-width: 100%;
+}
+
+#foto-equipo {
+    float: right; 
+    margin-right: 50px;
+    clear: both;
+    height: 300px;
+    max-width: 100%;
+}
+
+dl {
+    column-count: 4; 
+    column-gap: 20px;
+}
+
+.columna {
+    break-inside: avoid; 
+    margin-bottom: 20px;
+}
+
+dt {
+    font-weight: bold;
+}
+
+dd {
+    margin-left: 0;
+}
+
+/*FOOTER*/
+footer {
+    text-align: center;
+}
