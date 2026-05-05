@@ -1,16 +1,25 @@
 /*VARIABLES*/
 :root {
- --color-primario: #2c7be5;
- --color-secundario: #1a5bb8;
- --color-acento: #1ae8aa;
- --color-fondo: #f4f4f4;
- --color-texto: #000000;
+    /*variables de color*/
+    --color-primario: #5b91d6;
+    --color-secundario: #1a5bb8;
+    --color-acento: #2c7be5;
+    --color-fondo: #f4f4f4;
+    --color-texto: #000000;
+    /*variables de texto*/
+    --fuente-principal: "Montserrat";
+    --fuente-secundaria: "Inter";
 }
+
+
 
 body {
     margin-left: 75px; 
     margin-right: 75px;
     background-color: var(--color-fondo);
+    font-family: var(--fuente-secundaria);
+    font-size: 16px;
+    line-height: 1.5;
 }
 
 /*HEADER*/
@@ -19,61 +28,71 @@ header {
     background-color: var(--color-primario);
     margin-bottom: 20px;
     border-radius: 15px;
+    padding: 15px;
 }
 
-h1{
-    font-family: "Montserrat";
+h1, h2, h3 {
+    font-family: var(--fuente-principal);
 }
 
 /*NAVEGACION*/
 nav {
-    text-align: center;
+    display: flex;
+    justify-content: center;
     background-color: var(--color-secundario);
     border-radius: 15px;
+    padding: 15px;
+    gap: 10px;
 }
 
-button {
+nav a {
     background-color: var(--color-fondo);
     border-radius: 15px;
+    padding: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    color: inherit;
+}
+
+nav :hover {
+    background-color: var(--color-acento);
+    color: var(--color-fondo);
 }
 
 section {
-    border-style: groove;
+    border-style: solid;
     border-color: var(--color-acento);
     border-radius: 15px;
     padding: 15px;
-    margin-bottom: 10px;
-
-}
-
-p {
-    font-family: "Inter";
+    margin-top: 15px;
+    overflow: hidden;
 }
 
 /*IMAGENES*/
-#charla {
-    margin-left: 100px;
-    border-style: groove;
-    border-radius: 15px;
-    height: 250px;
-    max-width: 100%;
-}
-
-#voluntariado {
+img {
+    border-radius: 10px;
     float: right; 
-    margin-right: 100px;
-    border-style: groove;
-    border-radius: 15px;
-    height: 250px;
-    max-width: 100%;
-}
-
-#foto-equipo {
-    float: right; 
-    margin-right: 50px;
     clear: both;
+    margin-right: 50px;
+}
+
+#charla, #voluntariado {
+    height: 250px;
+    max-width: 100%;
+    margin-left: 15px;
+}
+
+#voluntariado { 
+    margin-top: 15px;
+}
+
+#foto-equipo { 
     height: 300px;
     max-width: 100%;
+}
+
+ul {
+    list-style: none;
 }
 
 dl {
@@ -97,4 +116,7 @@ dd {
 /*FOOTER*/
 footer {
     text-align: center;
+    background-color: var(--color-acento);
+    padding: 10px;
+    border-radius: 10px;
 }
