@@ -6,12 +6,18 @@
     --color-acento: #2c7be5;
     --color-fondo: #f4f4f4;
     --color-texto: #000000;
+    --color-texto-secundario: white;
     /*variables de texto*/
     --fuente-principal: "Montserrat";
     --fuente-secundaria: "Inter";
 }
 
-
+/*RESET*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
 body {
     margin-left: 75px; 
@@ -20,6 +26,7 @@ body {
     font-family: var(--fuente-secundaria);
     font-size: 16px;
     line-height: 1.5;
+    padding: 20px;
 }
 
 /*HEADER*/
@@ -29,6 +36,11 @@ header {
     margin-bottom: 20px;
     border-radius: 15px;
     padding: 15px;
+}
+
+header p {
+    color: var(--color-texto-secundario);
+    margin-bottom: 5px;
 }
 
 h1, h2, h3 {
@@ -54,11 +66,12 @@ nav a {
     color: inherit;
 }
 
-nav :hover {
+nav a:hover {
     background-color: var(--color-acento);
     color: var(--color-fondo);
 }
 
+/*SECCIONES*/
 section {
     border-style: solid;
     border-color: var(--color-acento);
@@ -66,6 +79,16 @@ section {
     padding: 15px;
     margin-top: 15px;
     overflow: hidden;
+}
+
+#map-link {
+    display: inline-block;
+    margin-top: 10px;
+    background-color: var(--color-secundario);
+    color: var(--color-texto-secundario);
+    padding: 8px;
+    border-radius: 5px;
+    text-decoration: none;
 }
 
 /*IMAGENES*/
@@ -77,7 +100,7 @@ img {
 }
 
 #charla, #voluntariado {
-    height: 250px;
+    height: 15rem;
     max-width: 100%;
     margin-left: 15px;
 }
@@ -87,10 +110,11 @@ img {
 }
 
 #foto-equipo { 
-    height: 300px;
+    height: 18em;
     max-width: 100%;
 }
 
+/*LISTAS*/
 ul {
     list-style: none;
 }
@@ -117,6 +141,6 @@ dd {
 footer {
     text-align: center;
     background-color: var(--color-acento);
-    padding: 10px;
+    padding: 5px;
     border-radius: 10px;
 }
