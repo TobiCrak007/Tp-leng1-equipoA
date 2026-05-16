@@ -144,3 +144,55 @@ footer {
     padding: 5px;
     border-radius: 10px;
 }
+/*Seccion de programa*/
+.programas {
+    padding: 20px;
+}
+
+.programas-section h2 {
+    color: var(--color-primario);
+    margin-bottom: 20px;
+}
+
+.programas-section p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.programas-section article {
+    margin-bottom: 25px;
+    padding: 15px;
+    border-left: 5px solid var(--color-acento);
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+.programas-section h3 {
+    margin-bottom: 10px;
+    color: var(--color-secundario);
+}
+/*Navegacion*/
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: var(--color-secundario);
+    border-radius: 15px;
+    padding: 15px;
+    gap: 10px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+}
+
+nav a {
+    background-color: var(--color-fondo);
+    border-radius: 15px;
+    padding: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    color: inherit;
+}
