@@ -1,3 +1,4 @@
+
 /*VARIABLES*/
 :root {
     /*variables de color*/
@@ -182,3 +183,176 @@ body {
             text-align: center;
             padding: 10px;
         }
+
+/*VARIABLES*/
+:root {
+    /*variables de color*/
+    --color-primario: #5b91d6;
+    --color-secundario: #1a5bb8;
+    --color-acento: #2c7be5;
+    --color-fondo: #f4f4f4;
+    --color-texto: #000000;
+    --color-texto-secundario: white;
+
+    /*variables de texto*/
+    --fuente-principal: "Montserrat";
+    --fuente-secundaria: "Inter";
+}
+
+/*RESET*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin-left: 75px; 
+    margin-right: 75px;
+    background-color: var(--color-fondo);
+    font-family: var(--fuente-secundaria);
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 20px;
+}
+
+/*HEADER*/
+header {
+    text-align: center;
+    background-color: var(--color-primario);
+    margin-bottom: 20px;
+    border-radius: 15px;
+    padding: 15px;
+}
+
+header p {
+    color: var(--color-texto-secundario);
+    margin-bottom: 5px;
+}
+
+h1, h2, h3 {
+    font-family: var(--fuente-principal);
+}
+
+/*NAVEGACION*/
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: var(--color-secundario);
+    border-radius: 15px;
+    padding: 15px;
+    gap: 10px;
+}
+
+nav a {
+    background-color: var(--color-fondo);
+    border-radius: 15px;
+    padding: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    color: inherit;
+}
+
+nav a:hover {
+    background-color: var(--color-acento);
+    color: var(--color-fondo);
+}
+
+/*SECCIONES*/
+section {
+    border-style: solid;
+    border-color: var(--color-acento);
+    border-radius: 15px;
+    padding: 15px;
+    margin-top: 15px;
+    overflow: hidden;
+}
+
+#map-link {
+    display: inline-block;
+    margin-top: 10px;
+    background-color: var(--color-secundario);
+    color: var(--color-texto-secundario);
+    padding: 8px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+/*IMAGENES*/
+img {
+    border-radius: 10px;
+    float: right; 
+    clear: both;
+    margin-right: 50px;
+}
+
+#charla, #voluntariado {
+    height: 15rem;
+    max-width: 100%;
+    margin-left: 15px;
+}
+
+#voluntariado { 
+    margin-top: 15px;
+}
+
+#foto-equipo { 
+    height: 18em;
+    max-width: 100%;
+}
+
+/*LISTAS*/
+ul {
+    list-style: none;
+}
+
+dl {
+    column-count: 4; 
+    column-gap: 20px;
+}
+
+.columna {
+    break-inside: avoid; 
+    margin-bottom: 20px;
+}
+
+dt {
+    font-weight: bold;
+}
+
+dd {
+    margin-left: 0;
+}
+
+/*FOOTER*/
+footer {
+    text-align: center;
+    background-color: var(--color-acento);
+    padding: 5px;
+    border-radius: 10px;
+}
+
+/*Seccion de programa*/
+.programas-section h2 {
+    color: var(--color-primario);
+    margin-bottom: 20px;
+}
+
+.programas-section p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.programas-section article {
+    margin-bottom: 25px;
+    padding: 15px;
+    border-left: 5px solid var(--color-acento);
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+.programas-section h3 {
+    margin-bottom: 10px;
+    color: var(--color-secundario);
+}
+
