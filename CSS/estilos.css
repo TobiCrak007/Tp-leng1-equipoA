@@ -69,11 +69,16 @@ section {
 }
 
 /*IMAGENES*/
-img {
+.imagenes {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.foto {
     border-radius: 10px;
-    float: right; 
-    clear: both;
-    margin-right: 50px;
 }
 
 #charla, #voluntariado {
@@ -120,3 +125,60 @@ footer {
     padding: 10px;
     border-radius: 10px;
 }
+body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #2c7be5;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #1a5bb8;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 10px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        .section {
+            background: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+        }
+
+        .programas {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background: #e9f2ff;
+            padding: 15px;
+            border-radius: 10px;
+            width: 250px;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #2c7be5;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
