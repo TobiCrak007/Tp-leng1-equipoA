@@ -22,7 +22,32 @@
     </header>
     <main>
         <h2>Contacto</h2>
-        <p>Si deseas ponerte en contacto con nosotros, puedes hacerlo a través de los siguientes medios:</p>
+        <p>Si deseas ponerte en contacto con nosotros, puedes hacerlo a través del siguiente formulario:</p>
+        <div class="form">
+            <div class="form-container">
+                <form action="mailto:contacto.ong@gmail.com" method="post" enctype="text/plain">
+                    <label for="name">Nombre y Apellido:</label>
+                    <input type="text" id="name" name="name" placeholder="Tu nombre y apellido" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="ejemplo@dominio.com" required>
+
+                    <label for="asunto">Asunto:</label>
+                    <select id="asunto" name="asunto" required>
+                        <option value="">Selecciona una opción</option>
+                        <option value="programas">Información de Programas</option>
+                        <option value="inscripciones">Inscripciones</option>
+                        <option value="otras">Otras consultas</option>
+                    </select>
+
+                    <label for="message">Mensaje:</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
+
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </div>
+        <h3>Otras formas de contacto</h3>
         <ul>
             <li>Email: <a href="mailto:contacto.ong@gmail.com">contacto.ong@gmail.com</a></li>
             <li>Celular: <a href="tel:+1134567890">1134567890</a></li>
@@ -30,12 +55,11 @@
                 <a id="map-link" href="https://www.google.com/maps/place/Asociacion+Civil+Proyectarg/@-34.6510734,-58.5223851,14z/data=!4m10!1m2!2m1!1sONG!3m6!1s0x95bcc9e05dcf2c67:0x10c986b57c7b52fd!8m2!3d-34.6510755!4d-58.4954351!15sCgNPTkeSARthc3NvY2lhdGlvbl9vcl9vcmdhbml6YXRpb27gAQA!16s%2Fg%2F1tmk9pcj?entry=ttu&g_ep=EgoyMDI2MDQwOC4wIKXMDSoASAFQAw%3D%3D" target="_blank">
                     Como llegar</a></li>
         </ul>
-        
     </main>
     <br>
     <hr>
     <footer>
-       <p>&copy; 2026 - Tobias Uriel Medina, Lionela Abril Ledesma, Paula Agustina Penin, Lucas Daniel Santillan.</p>
+       <p>&copy; 2026 - Tobias Uriel Medina, Lionela Abril Ledesma, Paula Agustina Penin.</p>
     </footer> 
 </body>
 </html>
