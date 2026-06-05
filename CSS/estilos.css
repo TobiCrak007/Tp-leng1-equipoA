@@ -1,189 +1,3 @@
-
-/*VARIABLES*/
-:root {
-    /*variables de color*/
-    --color-primario: #5b91d6;
-    --color-secundario: #1a5bb8;
-    --color-acento: #2c7be5;
-    --color-fondo: #f4f4f4;
-    --color-texto: #000000;
-    /*variables de texto*/
-    --fuente-principal: "Montserrat";
-    --fuente-secundaria: "Inter";
-}
-
-
-
-body {
-    margin-left: 75px; 
-    margin-right: 75px;
-    background-color: var(--color-fondo);
-    font-family: var(--fuente-secundaria);
-    font-size: 16px;
-    line-height: 1.5;
-}
-
-/*HEADER*/
-header {
-    text-align: center;
-    background-color: var(--color-primario);
-    margin-bottom: 20px;
-    border-radius: 15px;
-    padding: 15px;
-}
-
-h1, h2, h3 {
-    font-family: var(--fuente-principal);
-}
-
-/*NAVEGACION*/
-nav {
-    display: flex;
-    justify-content: center;
-    background-color: var(--color-secundario);
-    border-radius: 15px;
-    padding: 15px;
-    gap: 10px;
-}
-
-nav a {
-    background-color: var(--color-fondo);
-    border-radius: 15px;
-    padding: 8px;
-    text-decoration: none;
-    font-weight: bold;
-    color: inherit;
-}
-
-nav :hover {
-    background-color: var(--color-acento);
-    color: var(--color-fondo);
-}
-
-section {
-    border-style: solid;
-    border-color: var(--color-acento);
-    border-radius: 15px;
-    padding: 15px;
-    margin-top: 15px;
-    overflow: hidden;
-}
-
-/*IMAGENES*/
-.imagenes {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-    margin: 20px 0;
-}
-
-.foto {
-    border-radius: 10px;
-}
-
-#charla, #voluntariado {
-    height: 250px;
-    max-width: 100%;
-    margin-left: 15px;
-}
-
-#voluntariado { 
-    margin-top: 15px;
-}
-
-#foto-equipo { 
-    height: 300px;
-    max-width: 100%;
-}
-
-ul {
-    list-style: none;
-}
-
-dl {
-    column-count: 4; 
-    column-gap: 20px;
-}
-
-.columna {
-    break-inside: avoid; 
-    margin-bottom: 20px;
-}
-
-dt {
-    font-weight: bold;
-}
-
-dd {
-    margin-left: 0;
-}
-
-/*FOOTER*/
-footer {
-    text-align: center;
-    background-color: var(--color-acento);
-    padding: 10px;
-    border-radius: 10px;
-}
-body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            background-color: #f4f4f4;
-        }
-
-        header {
-            background-color: #2c7be5;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-
-        nav {
-            background-color: #1a5bb8;
-            padding: 10px;
-            text-align: center;
-        }
-
-        nav a {
-            color: white;
-            margin: 10px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        .container {
-            padding: 20px;
-        }
-
-        .section {
-            background: white;
-            padding: 20px;
-            margin-bottom: 20px;
-            border-radius: 10px;
-        }
-
-        .programas {
-            display: flex;
-            gap: 20px;
-            flex-wrap: wrap;
-        }
-
-        .card {
-            background: #e9f2ff;
-            padding: 15px;
-            border-radius: 10px;
-            width: 250px;
-            text-align: center;
-        }
-
-        footer {
-            background-color: #2c7be5;
-            color: white;
-            text-align: center;
-            padding: 10px;
-        }
-
 /*VARIABLES*/
 :root {
     /*variables de color*/
@@ -193,7 +7,6 @@ body {
     --color-fondo: #f4f4f4;
     --color-texto: #000000;
     --color-texto-secundario: white;
-
     /*variables de texto*/
     --fuente-principal: "Montserrat";
     --fuente-secundaria: "Inter";
@@ -232,6 +45,11 @@ header p {
 
 h1, h2, h3 {
     font-family: var(--fuente-principal);
+    margin-bottom: 5px;
+}
+
+h2, h3 {
+    color: var(--color-primario);
 }
 
 /*NAVEGACION*/
@@ -253,7 +71,7 @@ nav a {
     color: inherit;
 }
 
-nav a:hover {
+nav :hover {
     background-color: var(--color-acento);
     color: var(--color-fondo);
 }
@@ -274,8 +92,182 @@ section {
     background-color: var(--color-secundario);
     color: var(--color-texto-secundario);
     padding: 8px;
-    border-radius: 5px;
+    border-radius: 25px;
     text-decoration: none;
+    font-weight: bold;
+}
+
+#map-link:hover {
+    background-color: var(--color-primario);
+    color: var(--color-fondo);
+}
+
+.container {
+    padding: 20px;
+}
+
+.section {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.programas {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.card {
+    background: #e9f2ff;
+    padding: 15px;
+    border-radius: 10px;
+    width: 250px;
+    text-align: center;
+}
+
+/*CONTACTO*/
+.form {
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+    margin: 25px;
+    margin-bottom: 30px;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    margin: 0;  
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px 40px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 102, 255, 0.3);
+    width: 100%;
+    max-width: 700px;
+    height: 100%;
+    text-align: left;
+}
+
+.form-container h2 {
+    margin-bottom: 20px;
+}
+
+.form-container form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    font-family: var(--fuente-secundaria);
+}
+
+label {
+    align-self: flex-start;
+    margin-top: 10px;
+    font-weight: bold;
+    color: var(--color-primario);
+}
+
+input[type="text"], input[type="email"], select, textarea {
+    position: relative;
+    margin: 8px 0;
+    width: 100%;
+    padding: 12px 15px;
+    border: none;
+    border-radius: 5px;
+    background: none;
+    color: var(--color-texto);
+    outline: none;
+    font-size: 18px;
+    border-bottom: 2px solid var(--color-acento);
+    transition: 0.4s;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, select:focus, textarea:focus {
+    border-color: var(--color-primario);
+    box-shadow: 0 5px 15px var(--color-primario);
+}
+
+textarea {
+    max-height: 50px;
+    resize: none;
+}
+
+input span {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--color-texto);
+    font-size: 16px;
+    pointer-events: none;
+    transition: 0.4s;
+}
+
+input:focus + span, input:not(:placeholder-shown) + span, select:focus + span, select:not(:placeholder-shown) + span, 
+textarea:focus + span, textarea:not(:placeholder-shown) + span {
+    top: 5px;
+    font-size: 12px;
+    color: var(--color-primario);
+}
+
+input, select, textarea {
+    font-family: var(--fuente-secundaria);
+}
+
+button {
+    background: linear-gradient(90deg, var(--color-primario), var(--color-secundario));
+    color: var(--color-texto-secundario);
+    border: none;
+    padding: 12px 30px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.4s;
+    margin-top: 10px;
+}
+
+button:hover {
+    background: linear-gradient(90deg, var(--color-secundario), var(--color-primario));
+    box-shadow: 0 5px 15px var(--color-primario);
+}
+
+/*Seccion de programa*/
+.programas {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.programas-section h2 {
+    color: var(--color-primario);
+    margin-bottom: 20px;
+}
+
+.programas-section p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.programas-section article {
+    margin-bottom: 25px;
+    padding: 15px;
+    border-left: 5px solid var(--color-acento);
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+.programas-section h3 {
+    margin-bottom: 10px;
+    color: var(--color-secundario);
 }
 
 /*IMAGENES*/
@@ -286,8 +278,20 @@ img {
     margin-right: 50px;
 }
 
+.imagenes {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.foto {
+    border-radius: 10px;
+}
+
 #charla, #voluntariado {
-    height: 15rem;
+    height: 250px;
     max-width: 100%;
     margin-left: 15px;
 }
@@ -297,7 +301,7 @@ img {
 }
 
 #foto-equipo { 
-    height: 18em;
+    height: 300px;
     max-width: 100%;
 }
 
@@ -326,33 +330,9 @@ dd {
 
 /*FOOTER*/
 footer {
+    margin-top: 10px;
     text-align: center;
     background-color: var(--color-acento);
     padding: 5px;
     border-radius: 10px;
 }
-
-/*Seccion de programa*/
-.programas-section h2 {
-    color: var(--color-primario);
-    margin-bottom: 20px;
-}
-
-.programas-section p {
-    margin-bottom: 15px;
-    line-height: 1.6;
-}
-
-.programas-section article {
-    margin-bottom: 25px;
-    padding: 15px;
-    border-left: 5px solid var(--color-acento);
-    background-color: #ffffff;
-    border-radius: 10px;
-}
-
-.programas-section h3 {
-    margin-bottom: 10px;
-    color: var(--color-secundario);
-}
-
