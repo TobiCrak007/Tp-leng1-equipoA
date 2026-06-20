@@ -21,45 +21,78 @@
         </nav>
     </header>
     <main>
-        <h2>Contacto</h2>
-        <p>Si deseas ponerte en contacto con nosotros, puedes hacerlo a través del siguiente formulario:</p>
-        <div class="form">
-            <div class="form-container">
-                <form action="mailto:contacto.ong@gmail.com" method="post" enctype="text/plain">
-                    <label for="name">Nombre y Apellido:</label>
-                    <input type="text" id="name" name="name" placeholder="Tu nombre y apellido" required>
+        <section class="contacto-section"> 
+            <h2>Contacto</h2>
+            <p>Para más información o consultas podes completar el siguiente formulario:</p>
+            <div class="form">
+                <div class="form-container">
+                    <form action="mailto:contacto.ong@gmail.com" method="post" enctype="text/plain">
+                        <label for="name">Nombre:</label>
+                        <input type="text" id="name" name="name" placeholder="Tu nombre" required>
 
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" placeholder="ejemplo@dominio.com" required>
+                        <label for="surname">Apellido:</label>
+                        <input type="text" id="surname" name="surname" placeholder="Tu apellido" required>
 
-                    <label for="asunto">Asunto:</label>
-                    <select id="asunto" name="asunto" required>
-                        <option value="">Selecciona una opción</option>
-                        <option value="programas">Información de Programas</option>
-                        <option value="inscripciones">Inscripciones</option>
-                        <option value="otras">Otras consultas</option>
-                    </select>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="ejemplo@dominio.com" required>
 
-                    <label for="message">Mensaje:</label>
-                    <textarea id="message" name="message" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
+                        <label for="asunto">Asunto:</label>
+                        <select id="asunto" name="asunto" required>
+                            <option value="">Selecciona una opción</option>
+                            <option value="programas">Información para programas</option>
+                            <option value="voluntariado">Voluntariado</option>
+                            <option value="inscripciones">Inscripciones</option>
+                            <option value="otras">Otras consultas</option>
+                        </select>
 
-                    <button type="submit">Enviar</button>
-                </form>
+                        <label for="message">Mensaje:</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
+
+                        <button type="submit">Enviar</button>
+                    </form>
+                </div>
             </div>
-        </div>
-        <h3>Otras formas de contacto</h3>
-        <ul>
-            <li>Email: <a href="mailto:contacto.ong@gmail.com">contacto.ong@gmail.com</a></li>
-            <li>Celular: <a href="tel:+1134567890">1134567890</a></li>
-            <li> Dirección: Albariño 1390, C1440 Cdad. Autónoma de Buenos Aires, Argentina 
-                <a id="map-link" href="https://www.google.com/maps/place/Asociacion+Civil+Proyectarg/@-34.6510734,-58.5223851,14z/data=!4m10!1m2!2m1!1sONG!3m6!1s0x95bcc9e05dcf2c67:0x10c986b57c7b52fd!8m2!3d-34.6510755!4d-58.4954351!15sCgNPTkeSARthc3NvY2lhdGlvbl9vcl9vcmdhbml6YXRpb27gAQA!16s%2Fg%2F1tmk9pcj?entry=ttu&g_ep=EgoyMDI2MDQwOC4wIKXMDSoASAFQAw%3D%3D" target="_blank">
-                    Como llegar</a></li>
-        </ul>
+        </section>
+        <section class="faq-section">
+            <h2>Preguntas Frecuentes</h2>
+
+            <details class="faq-item">
+                <summary>¿Cómo puedo convertirme en voluntario?</summary>
+                <p>El proceso es muy sencillo. Solo debes completar el formulario de inscipción que se encuentre en <a href="programas.html">programas</a>.</p>
+            </details>
+
+            <details class="faq-item">
+                <summary>¿Tienen opciones de voluntariado virtual o remoto?</summary>
+                <p>Sí, contamos con tareas de apoyo digital como diseño gráfico, gestión de redes y mentorías en línea.</p>
+            </details>
+
+            <details class="faq-item">
+                <summary>¿Cómo puedo solicitar el apoyo de la ONG?</summary>
+                <p>Si tú o tu comunidad necesitan ayuda, llena la solicitud en línea en <a href="index.html">Solicitud de Apoyo</a>. También puedes asistir a nuestras oficinas los 
+                    días de atención.</p>
+            </details>
+
+            <details class="faq-item">
+                <summary>¿Cuánto tiempo tardan en responder los mensajes de contacto?</summary>
+                <p>Nuestro equipo revisa los mensajes diariamente. Recibirás una respuesta en tu correo electrónico en un plazo máximo de 48 horas hábiles.</p>
+            </details>
+        </section>
+        <section>
+            <h3>Otras formas de contacto</h3>
+            <address>
+                <ul>
+                    <li>Email: <a href="mailto:contacto.ong@gmail.com">contacto.ong@gmail.com</a></li>
+                    <li>Numero de contacto: <a href="tel:+1134567890">1134567890</a></li>
+                    <li> Dirección: Albariño 1390, C1440 Cdad. Autónoma de Buenos Aires, Argentina 
+                        <a id="map-link" href="https://www.google.com/maps/place/Asociacion+Civil+Proyectarg/@-34.6510734,-58.5223851,14z/data=!4m10!1m2!2m1!1sONG!3m6!1s0x95bcc9e05dcf2c67:0x10c986b57c7b52fd!8m2!3d-34.6510755!4d-58.4954351!15sCgNPTkeSARthc3NvY2lhdGlvbl9vcl9vcmdhbml6YXRpb27gAQA!16s%2Fg%2F1tmk9pcj?entry=ttu&g_ep=EgoyMDI2MDQwOC4wIKXMDSoASAFQAw%3D%3D" 
+                            target="_blank" rel="noopener noreferrer">
+                            Como llegar</a></li>
+                </ul>
+            </address>
+        </section>
     </main>
-    <br>
-    <hr>
     <footer>
-       <p>&copy; 2026 - Tobias Uriel Medina, Lionela Abril Ledesma, Paula Agustina Penin.</p>
+       <p>&copy; 2026 - Tobias Uriel Medina, Lionela Abril Ledesma.</p>
     </footer> 
 </body>
 </html>
