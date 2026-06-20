@@ -76,6 +76,11 @@ nav :hover {
     color: var(--color-fondo);
 }
 
+main {
+    padding-bottom: 25px;
+    border-bottom: 2px solid var(--color-primario);
+}
+
 /*SECCIONES*/
 section {
     border-style: solid;
@@ -129,6 +134,10 @@ section {
 }
 
 /*CONTACTO*/
+.contacto-section {
+    border: none;
+}
+
 .form {
     display: flex;
     justify-content: left;
@@ -160,14 +169,16 @@ section {
 }
 
 .form-container form {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Crea dos columnas iguales */
+    column-gap: 20px; /* Espacio horizontal entre las columnas de Nombre y Apellido */
     width: 100%;
-    align-items: center;
     font-family: var(--fuente-secundaria);
 }
 
 label {
+    display: block;
+    margin-bottom: 5px;
     align-self: flex-start;
     margin-top: 10px;
     font-weight: bold;
@@ -175,6 +186,8 @@ label {
 }
 
 input[type="text"], input[type="email"], select, textarea {
+    display: block;
+    margin-bottom: 15px;
     position: relative;
     margin: 8px 0;
     width: 100%;
@@ -221,6 +234,31 @@ input, select, textarea {
     font-family: var(--fuente-secundaria);
 }
 
+label[for="email"], input[type="email"], label[for="asunto"], select, label[for="message"], textarea,
+button {
+    grid-column: span 2;
+}
+
+label[for="name"] {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+input[id="name"] {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+label[for="surname"] {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+input[id="surname"] {
+    grid-column: 2;
+    grid-row: 2;
+}
+
 button {
     background: linear-gradient(90deg, var(--color-primario), var(--color-secundario));
     color: var(--color-texto-secundario);
@@ -232,11 +270,51 @@ button {
     font-weight: bold;
     transition: 0.4s;
     margin-top: 10px;
+    justify-self: center; 
+    width: auto;
 }
 
 button:hover {
     background: linear-gradient(90deg, var(--color-secundario), var(--color-primario));
     box-shadow: 0 5px 15px var(--color-primario);
+}
+
+/*SECCION PREGUNTAS FRECUENTES*/
+.faq-section {
+    max-width: 100%;
+}
+
+.faq-section h2 {
+    text-align: center;
+    color: var(--color-primario);
+    margin-bottom: 20px;
+}
+
+.faq-item {
+    background-color: #f9f9f9;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.faq-item[open] {
+    background-color: #fff;
+    border-color: var(--color-primario); /* Cambia al color principal de su web */
+}
+
+summary {
+    font-weight: bold;
+    color: var(--color-primario);
+    outline: none;
+}
+
+.faq-item p {
+    margin-top: 10px;
+    color: var(--color-texto);
+    line-height: 1.5;
 }
 
 /*Seccion de programa*/
@@ -330,7 +408,7 @@ dd {
 
 /*FOOTER*/
 footer {
-    margin-top: 10px;
+    margin-top: 25px;
     text-align: center;
     background-color: var(--color-acento);
     padding: 5px;
