@@ -9,6 +9,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
         <link rel="stylesheet" href="CSS/estilos.css">
     </head>
 
@@ -16,106 +17,131 @@
 
         <header>
             <h1>Programas de la ONG</h1>
-            <nav>
-             <a href="index.html">Inicio</a>
-             <a href="nosotros.html">Nosotros</a>
-             <a href="programas.html">Programas</a>
-             <a href="contacto.html">Contacto</a>
-            </nav>
         </header>
 
-        <main class="programas">
+     <nav class="d-flex justify-content-center gap-3">
+            <a href="index.html" class="btn btn-outline-light">
+                Inicio
+            </a>
 
+            <a href="nosotros.html" class="btn btn-outline-light">
+                Nosotros
+            </a>
+
+            <a href="programas.html" class="btn btn-outline-light">
+                Programas
+            </a>
+
+            <a href="contacto.html" class="btn btn-outline-light">
+                Contacto
+            </a>
+
+        </nav>
+
+        <main class="container my-4">
             <section class="programas-section">
 
-                <h2>Nuestros Programas</h2>
+                <h2 class="text-center mb-4">
+                    Nuestros Programas
+                </h2>
 
-                <p>
+                <p class="text-center mb-5">
                     Conoce las iniciativas que impulsamos para promover la inclusión digital.
                 </p>
 
-                <article>
-                    <h3>Conectados Siempre</h3>
+                <div class="row g-4">
 
-                    <p>
-                        <strong>Descripción:</strong>
-                        Talleres donde los adultos mayores aprenden a usar celulares,
-                        internet y redes sociales.
-                    </p>
+                    <div class="col-md-6">
+                        <article class="bg-white border rounded shadow-sm p-3 h-100">
+                            <h3>Conectados Siempre</h3>
 
-                    <p>
-                        <strong>Dirigido a:</strong>
-                        Adultos mayores sin experiencia digital.
-                    </p>
+                            <p>
+                                <strong>Descripción:</strong>
+                                Talleres donde los adultos mayores aprenden a usar celulares,
+                                internet y redes sociales.
+                            </p>
 
-                    <p>
-                        <strong>Cómo participar:</strong>
-                        Inscribiéndose en talleres presenciales o desde la web.
-                    </p>
-                </article>
+                            <p>
+                                <strong>Dirigido a:</strong>
+                                Adultos mayores sin experiencia digital.
+                            </p>
 
-                <article>
-                    <h3>Jóvenes Digitales</h3>
+                            <p>
+                                <strong>Cómo participar:</strong>
+                                Inscribiéndose en talleres presenciales o desde la web.
+                            </p>
+                        </article>
+                    </div>
 
-                    <p>
-                        <strong>Descripción:</strong>
-                        Cursos de herramientas digitales como programación básica,
-                        diseño web y uso de computadoras.
-                    </p>
+                    <div class="col-md-6">
+                        <article class="bg-white border rounded shadow-sm p-3 h-100">
+                            <h3>Jóvenes Digitales</h3>
 
-                    <p>
-                        <strong>Dirigido a:</strong>
-                        Jóvenes de 15 a 25 años.
-                    </p>
+                            <p>
+                                <strong>Descripción:</strong>
+                                Cursos de herramientas digitales como programación básica,
+                                diseño web y uso de computadoras.
+                            </p>
 
-                    <p>
-                        <strong>Cómo participar:</strong>
-                        Inscripción online a cursos gratuitos.
-                    </p>
-                </article>
+                            <p>
+                                <strong>Dirigido a:</strong>
+                                Jóvenes de 15 a 25 años.
+                            </p>
 
-                <article>
-                    <h3>Puentes Generacionales</h3>
+                            <p>
+                                <strong>Cómo participar:</strong>
+                                Inscripción online a cursos gratuitos.
+                            </p>
+                        </article>
+                    </div>
 
-                    <p>
-                        <strong>Descripción:</strong>
-                        Jóvenes enseñan tecnología a adultos mayores,
-                        fomentando la inclusión y el vínculo entre generaciones.
-                    </p>
+                    <div class="col-md-6">
+                        <article class="bg-white border rounded shadow-sm p-3 h-100">
+                            <h3>Puentes Generacionales</h3>
 
-                    <p>
-                        <strong>Dirigido a:</strong>
-                        Jóvenes voluntarios y adultos mayores.
-                    </p>
+                            <p>
+                                <strong>Descripción:</strong>
+                                Jóvenes enseñan tecnología a adultos mayores,
+                                fomentando la inclusión y el vínculo entre generaciones.
+                            </p>
 
-                    <p>
-                        <strong>Cómo participar:</strong>
-                        Registrándose como voluntario o participante.
-                    </p>
-                </article>
+                            <p>
+                                <strong>Dirigido a:</strong>
+                                Jóvenes voluntarios y adultos mayores.
+                            </p>
 
-                <article>
-                    <h3>Seguridad Digital</h3>
+                            <p>
+                                <strong>Cómo participar:</strong>
+                                Registrándose como voluntario o participante.
+                            </p>
+                        </article>
+                    </div>
 
-                    <p>
-                        <strong>Descripción:</strong>
-                        Talleres sobre cómo evitar estafas,
-                        proteger datos personales y navegar de forma segura.
-                    </p>
+                    <div class="col-md-6">
+                        <article class="bg-white border rounded shadow-sm p-3 h-100">
+                            <h3>Seguridad Digital</h3>
 
-                    <p>
-                        <strong>Dirigido a:</strong>
-                        Adultos mayores y principiantes.
-                    </p>
+                            <p>
+                                <strong>Descripción:</strong>
+                                Talleres sobre cómo evitar estafas,
+                                proteger datos personales y navegar de forma segura.
+                            </p>
 
-                    <p>
-                        <strong>Cómo participar:</strong>
-                        Charlas abiertas y capacitaciones gratuitas.
-                    </p>
-                </article>
+                            <p>
+                                <strong>Dirigido a:</strong>
+                                Adultos mayores y principiantes.
+                            </p>
+
+                            <p>
+                                <strong>Cómo participar:</strong>
+                                Charlas abiertas y capacitaciones gratuitas.
+                            </p>
+                        </article>
+                    </div>
+
+                </div>
 
             </section>
-
         </main>
 
         <footer>
