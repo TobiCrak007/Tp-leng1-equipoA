@@ -5,6 +5,7 @@
     --color-secundario: #1a5bb8;
     --color-acento: #2c7be5;
     --color-fondo: #f4f4f4;
+    --color-fondo-oscuro: #2f334a;
     --color-texto: #000000;
     --color-texto-secundario: white;
     /*variables de texto*/
@@ -27,6 +28,28 @@ body {
     font-size: 16px;
     line-height: 1.5;
     padding: 20px;
+}
+
+/*MODO OSCURO*/
+body.oscuro {
+    background-color: var(--color-fondo-oscuro);
+    color: var(--color-texto-secundario);
+}
+
+.btn-modo {
+    display: flex;
+    justify-self: right;
+    padding: 5px;
+    font-size: 10px;
+    background: var(--color-acento);
+}
+
+.btn-modo:hover {
+    background: var(--color-secundario);
+}
+
+body.oscuro .form-container {
+    background: var(--color-fondo);
 }
 
 /*HEADER*/
@@ -206,7 +229,8 @@ input[type="text"]:focus, input[type="email"]:focus, select:focus, textarea:focu
 
 textarea {
     max-height: 50px;
-    resize: none !important;
+    resize: none;
+    overflow: hidden;
 }
 
 input span {
