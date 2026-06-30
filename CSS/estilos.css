@@ -50,6 +50,7 @@ body.oscuro {
 
 body.oscuro .form-container {
     background: var(--color-fondo);
+    box-shadow: 0 0 15px var(--color-fondo);
 }
 
 /*HEADER*/
