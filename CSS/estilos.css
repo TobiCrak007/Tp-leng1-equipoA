@@ -145,15 +145,26 @@ section {
     margin-bottom: 20px;
     border-radius: 10px;
 }
+body.oscuro .section{
+    background:#454b63;
+}
 
-.card {
-    background: #e9f2ff;
+.programa-card {
+    background-color: #e9f2ff;
     padding: 15px;
     border-radius: 10px;
     width: 250px;
     text-align: center;
+    transition: background-color 0.3s, color 0.3s;
+}
+body.oscuro .programa-card{
+    background:#5a6180;
+    color:white;
 }
 
+body.oscuro .programa-card h3{
+    color:#7eb6ff;
+}
 /*CONTACTO*/
 .contacto-section {
     border: none;
@@ -357,12 +368,18 @@ summary {
     line-height: 1.6;
 }
 
-.programas-section article {
+.programa-detalle {
     margin-bottom: 25px;
     padding: 15px;
     border-left: 5px solid var(--color-acento);
     background-color: var(--color-fondo);
     border-radius: 10px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.oscuro .programa-detalle {
+    background-color: #444a66;
+    color: white;
 }
 
 .programas-section h3 {
