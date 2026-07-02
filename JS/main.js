@@ -1,11 +1,9 @@
 const boton = document.getElementById("btn-modo");
-
-// Al cargar la página, comprobar si el usuario dejó el modo oscuro activado
 if (localStorage.getItem("modo") === "oscuro") {
     document.body.classList.add("oscuro");
     boton.innerHTML = "☀️ Modo claro";
 }
-//evento del boton para cambiar el modo oscuro y claro
+
 boton.addEventListener("click", () => {
     document.body.classList.toggle("oscuro");
     if (document.body.classList.contains("oscuro")) {
@@ -20,50 +18,32 @@ boton.addEventListener("click", () => {
 
 
 const formulario = document.getElementById("formInscripcion");
+const mensajeExito = document.getElementById("mensajeExito");
 
-    const mensajeExito = document.getElementById("mensajeExito");
-
-        document.querySelectorAll(".btn-inscribir").forEach(btn=>{
-
-            btn.addEventListener("click",()=>{
-
-                document.getElementById("programaSelect").value = btn.dataset.programa;
-                formulario.reset();
-
-                formulario.classList.remove("was-validated");
-
-                mensajeExito.classList.add("d-none");
-
-                document.getElementById("programaSelect").value = btn.dataset.programa;
-            });
-
+document.querySelectorAll(".btn-inscribir").forEach(btn=>{
+    btn.addEventListener("click",()=>{
+        document.getElementById("programaSelect").value = btn.dataset.programa;
+        formulario.reset();
+        formulario.classList.remove("was-validated");
+        mensajeExito.classList.add("d-none");
+        document.getElementById("programaSelect").value = btn.dataset.programa;
         });
+    });
 
-        formulario.addEventListener("submit",function(e){
+    formulario.addEventListener("submit",function(e){
+        e.preventDefault();
+        if(!formulario.checkValidity()){
+            formulario.classList.add("was-validated");
+            return;
+        }
 
-            e.preventDefault();
-
-            if(!formulario.checkValidity()){
-
-                formulario.classList.add("was-validated");
-
-                return;
-
-            }
-
-            formulario.classList.remove("was-validated");
-
-            mensajeExito.classList.remove("d-none");
-
-            setTimeout(()=>{
-
-                bootstrap.Modal.getInstance(
-                    document.getElementById("modalInscripcion")
+        formulario.classList.remove("was-validated");
+        mensajeExito.classList.remove("d-none");
+        setTimeout(()=>{
+            bootstrap.Modal.getInstance(
+                document.getElementById("modalInscripcion")
                 ).hide();
-                formulario.reset();
-
-                mensajeExito.classList.add("d-none");
-
-            },2000);
-
-        });
+            formulario.reset();
+            mensajeExito.classList.add("d-none");
+        }, 2000);
+    });
